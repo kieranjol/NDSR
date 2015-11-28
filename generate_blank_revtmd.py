@@ -4,7 +4,8 @@ import subprocess
 
 
 import easygui
-result = easygui.enterbox(msg="Enter your name", title="Name query", default="blablabla")
+result = easygui.multenterbox("Enter your name", "Name query", ["Filename","whateva"])
+print result[1]
     
 inmagicxml = sys.argv[1] + '.xml'
 updated = inmagicxml + 'updated.xml'
@@ -92,6 +93,6 @@ with open(inmagicxml, "w+") as fo:
     
 
 with open(updated, "w+") as fo:
-    thingy = subprocess.check_output(['xml', 'ed', '-N', 'x=http://nwtssite.nwts.nara/schema/', '-u', '//revtmd:filename', '-v', result, inmagicxml])
+    thingy = subprocess.check_output(['xml', 'ed', '-N', 'x=http://nwtssite.nwts.nara/schema/', '-u', '//revtmd:filename', '-v', result[1], inmagicxml])
     fo.write(str(thingy))
     
