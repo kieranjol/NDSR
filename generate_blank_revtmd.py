@@ -1,5 +1,7 @@
 import sys
+import subprocess
 inmagicxml = sys.argv[1] + '.xml'
+updated = inmagicxml + 'updated.xml'
 with open(inmagicxml, "w+") as fo:
 
     fo.write('<?xml version="1.0" encoding="UTF-8"?>\n')
@@ -81,3 +83,9 @@ with open(inmagicxml, "w+") as fo:
     fo.write('</revtmd:object>\n')
     fo.write('</revtmd:reVTMD>\n')
     fo.write('</revtmd>\n')
+    
+
+with open(updated, "w+") as fo:
+    thingy = subprocess.check_output(['xml', 'ed', '-N', 'x=http://nwtssite.nwts.nara/schema/', '-u', '//revtmd:filename', '-v', 'testooo', inmagicxml])
+    fo.write(str(thingy))
+    
