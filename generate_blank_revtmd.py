@@ -91,6 +91,8 @@ with open(inmagicxml, "w+") as fo:
     
 
 with open(updated, "w+") as fo:
-    thingy = subprocess.check_output(['xml', 'ed', '-N', 'x=http://nwtssite.nwts.nara/schema/', '-u', '//revtmd:filename', '-v', result[1], inmagicxml])
-    fo.write(str(thingy))
-    
+    thangy = subprocess.check_output(['xml', 'ed', '-N', 'x=http://nwtssite.nwts.nara/schema/', '-u', '//revtmd:filename', '-v', result[1], inmagicxml])
+    fo.write(str(thangy))
+with open(inmagicxml, "w+") as fo:
+    thangy = subprocess.check_output(['xml', 'ed', '-N', 'x=http://nwtssite.nwts.nara/schema/', '-u', '//revtmd:identifier', '-v', result[0], updated])
+    fo.write(str(thangy))
