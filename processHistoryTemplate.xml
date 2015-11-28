@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmlns:revtmd="http://nwtssite.nwts.nara/schema/"
-xsi:schemaLocation=http://nwtssite.nwts.nara/schema/ 
-http://www.archives.gov/preservation/products/reVTMD.xsd">
+<revtmd xmlns:revtmd="http://nwtssite.nwts.nara/schema/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://nwtssite.nwts.nara/schema/ 
+    http://www.archives.gov/preservation/products/reVTMD.xsd">
     <revtmd:reVTMD>
         <revtmd:object>
             <revtmd:filename></revtmd:filename>
@@ -49,6 +50,6 @@ http://www.archives.gov/preservation/products/reVTMD.xsd">
                     <revtmd:settings></revtmd:settings>
                 </revtmd:codingProcessHistory>
             </revtmd:captureHistory>
-        </revtmd:object>
-    </revtmd:reVTMD>
+        </revtmd:object>  
+    </revtmd:reVTMD>  
 </revtmd>
