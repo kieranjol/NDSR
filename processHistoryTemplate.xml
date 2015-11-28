@@ -8,35 +8,33 @@
             <revtmd:filename></revtmd:filename>
             <revtmd:organization>
                 <revtmd:organization_main>
-                    <revtmd:name>Stanford University Libraries</revtmd:name>
-                    <revtmd:role>Custodian</revtmd:role>                                   
+                    <revtmd:name></revtmd:name>
+                    <revtmd:role></revtmd:role>                                   
                 </revtmd:organization_main>   
                 <revtmd:organization_division>
-                    <revtmd:name>Department of Special Collections</revtmd:name>
+                    <revtmd:name></revtmd:name>
                 </revtmd:organization_division>                              
             </revtmd:organization>
             <!-- Use for custodian of the content item -->
             <revtmd:organization>
               <revtmd:organization_main>
-                  <revtmd:name>Stanford University Libraries</revtmd:name>
-                  <revtmd:role>Preservation Reformatter</revtmd:role>
-                  <revtmd:role_note>Digitized at the Stanford Media Preservation
-                      Lab.
-                      http://lib.stanford.edu/stanford-media-preservation-lab/</revtmd:role_note>
+                  <revtmd:name></revtmd:name>
+                  <revtmd:role></revtmd:role>
+                  <revtmd:role_note></revtmd:role_note>
               </revtmd:organization_main>                              
             </revtmd:organization>
             <revtmd:identifier></revtmd:identifier>
             <revtmd:mimetype></revtmd:mimetype>
 
-            <revtmd:checksum algorithm="md5" dateTime="2012-11-20T09:30-05:00">9724d0844392766f3f6dc363bfd7af4e</revtmd:checksum>
+            <revtmd:checksum algorithm= "" dateTime=""></revtmd:checksum>
             <!-- Checksum as generated immediately after the digitization process. -->
-            <revtmd:use>Preservation Master</revtmd:use>
+            <revtmd:use></revtmd:use>
             <revtmd:captureHistory>
-                <revtmd:digitizationDate>2012-11-20</revtmd:digitizationDate>
+                <revtmd:digitizationDate></revtmd:digitizationDate>
                 <revtmd:digitizationEngineer></revtmd:digitizationEngineer>
-                <revtmd:digitizationEngineer>Michael Angeletti</revtmd:digitizationEngineer>                              
-                <revtmd:preparationActions>Tape-exercising</revtmd:preparationActions>
-                <revtmd:preparationActions>Cleaning</revtmd:preparationActions>
+                <revtmd:digitizationEngineer></revtmd:digitizationEngineer>                              
+                <revtmd:preparationActions></revtmd:preparationActions>
+                <revtmd:preparationActions></revtmd:preparationActions>
                 <!-- Here you list the tools used to create the object being described in this record.
                 For example, if you are creating a record for a low-quality viewing copy, you would describe
                 all of the tools used to get from the higher quality preservation copy to the viewing copy. -->
