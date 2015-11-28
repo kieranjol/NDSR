@@ -1,5 +1,11 @@
 import sys
 import subprocess
+
+
+
+import easygui
+result = easygui.enterbox(msg="Enter your name", title="Name query", default="blablabla")
+    
 inmagicxml = sys.argv[1] + '.xml'
 updated = inmagicxml + 'updated.xml'
 with open(inmagicxml, "w+") as fo:
@@ -86,6 +92,6 @@ with open(inmagicxml, "w+") as fo:
     
 
 with open(updated, "w+") as fo:
-    thingy = subprocess.check_output(['xml', 'ed', '-N', 'x=http://nwtssite.nwts.nara/schema/', '-u', '//revtmd:filename', '-v', 'testooo', inmagicxml])
+    thingy = subprocess.check_output(['xml', 'ed', '-N', 'x=http://nwtssite.nwts.nara/schema/', '-u', '//revtmd:filename', '-v', result, inmagicxml])
     fo.write(str(thingy))
     
