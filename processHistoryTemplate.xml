@@ -1,80 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<revtmd xmlns:revtmd="http://nwtssite.nwts.nara/schema/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://nwtssite.nwts.nara/schema/ 
-    http://www.archives.gov/preservation/products/reVTMD.xsd">
-    <revtmd:reVTMD>
-        <revtmd:object>
-            <revtmd:filename></revtmd:filename>
-            <revtmd:organization>
-                <revtmd:organization_main>
-                    <revtmd:name></revtmd:name>
-                    <revtmd:role></revtmd:role>                                   
-                </revtmd:organization_main>   
-                <revtmd:organization_division>
-                    <revtmd:name></revtmd:name>
-                </revtmd:organization_division>                              
-            </revtmd:organization>
-            <!-- Use for custodian of the content item -->
-            <revtmd:organization>
-              <revtmd:organization_main>
-                  <revtmd:name></revtmd:name>
-                  <revtmd:role></revtmd:role>
-                  <revtmd:role_note></revtmd:role_note>
-              </revtmd:organization_main>                              
-            </revtmd:organization>
-            <revtmd:identifier></revtmd:identifier>
-            <revtmd:mimetype></revtmd:mimetype>
-
-            <revtmd:checksum algorithm= "" dateTime=""></revtmd:checksum>
-            <!-- Checksum as generated immediately after the digitization process. -->
-            <revtmd:use></revtmd:use>
-            <revtmd:captureHistory>
-                <revtmd:digitizationDate></revtmd:digitizationDate>
-                <revtmd:digitizationEngineer></revtmd:digitizationEngineer>
-                <revtmd:digitizationEngineer></revtmd:digitizationEngineer>                              
-                <revtmd:preparationActions></revtmd:preparationActions>
-                <revtmd:preparationActions></revtmd:preparationActions>
-                <!-- Here you list the tools used to create the object being described in this record.
-                For example, if you are creating a record for a low-quality viewing copy, you would describe
-                all of the tools used to get from the higher quality preservation copy to the viewing copy. -->
-                <revtmd:codingProcessHistory>
-                    <revtmd:role></revtmd:role>
-                    <revtmd:description></revtmd:description>
-                    <revtmd:manufacturer></revtmd:manufacturer>
-                    <revtmd:modelName></revtmd:modelName>
-                    <revtmd:serialNumber></revtmd:serialNumber>
-                    <revtmd:signal></revtmd:signal>
-                    <revtmd:settings></revtmd:settings>
-                </revtmd:codingProcessHistory>
-                <revtmd:codingProcessHistory>
-                    <revtmd:role></revtmd:role>
-                    <revtmd:description></revtmd:description>
-                    <revtmd:manufacturer></revtmd:manufacturer>
-                    <revtmd:modelName></revtmd:modelName>
-                    <revtmd:serialNumber></revtmd:serialNumber>
-                    <revtmd:signal></revtmd:signal>
-                    <revtmd:settings></revtmd:settings>
-                </revtmd:codingProcessHistory>
-                <revtmd:codingProcessHistory>
-                    <revtmd:role></revtmd:role>
-                    <revtmd:description></revtmd:description>
-                    <revtmd:manufacturer></revtmd:manufacturer>
-                    <revtmd:modelName></revtmd:modelName>
-                    <revtmd:serialNumber></revtmd:serialNumber>
-                    <revtmd:signal></revtmd:signal>
-                    <revtmd:settings></revtmd:settings>
-                </revtmd:codingProcessHistory>
-                <revtmd:codingProcessHistory>
-                    <revtmd:role></revtmd:role>
-                    <revtmd:description></revtmd:description>
-                    <revtmd:manufacturer></revtmd:manufacturer>
-                    <revtmd:modelName></revtmd:modelName>
-                    <revtmd:serialNumber></revtmd:serialNumber>
-                    <revtmd:signal></revtmd:signal>
-                    <revtmd:settings></revtmd:settings>
-                </revtmd:codingProcessHistory>
-            </revtmd:captureHistory>
-        </revtmd:object>  
-    </revtmd:reVTMD>  
+<revtmd xmlns:revtmd="http://nwtssite.nwts.nara/schema/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nwtssite.nwts.nara/schema/  http://www.archives.gov/preservation/products/reVTMD.xsd">
+  <revtmd:reVTMD>
+    <revtmd:object>
+      <revtmd:filename>4554</revtmd:filename>
+      <revtmd:organization>
+        <revtmd:organization_main>
+          <revtmd:name/>
+          <revtmd:role/>
+        </revtmd:organization_main>
+        <revtmd:organization_division>
+          <revtmd:name/>
+        </revtmd:organization_division>
+      </revtmd:organization>
+      <!-- Use for custodian of the content item -->
+      <revtmd:organization>
+        <revtmd:organization_main>
+          <revtmd:name/>
+          <revtmd:role/>
+          <revtmd:role_note/>
+        </revtmd:organization_main>
+      </revtmd:organization>
+      <revtmd:identifier/>
+      <revtmd:mimetype/>
+      <revtmd:checksum algorithm="" dateTime=""/>
+      <!-- Checksum as generated immediately after the digitization process. -->
+      <revtmd:use/>
+      <revtmd:captureHistory>
+        <revtmd:digitizationDate/>
+        <revtmd:digitizationEngineer/>
+        <revtmd:digitizationEngineer/>
+        <revtmd:preparationActions/>
+        <revtmd:preparationActions/>
+        <!-- Here you list the tools used to create the object being described in this record.
+For example, if you are creating a record for a low-quality viewing copy, you would describe
+all of the tools used to get from the higher quality preservation copy to the viewing copy. -->
+        <revtmd:codingProcessHistory>
+          <revtmd:role/>
+          <revtmd:description/>
+          <revtmd:manufacturer/>
+          <revtmd:modelName/>
+          <revtmd:serialNumber/>
+          <revtmd:signal/>
+          <revtmd:settings/>
+        </revtmd:codingProcessHistory>
+        <revtmd:codingProcessHistory>
+          <revtmd:role/>
+          <revtmd:description/>
+          <revtmd:manufacturer/>
+          <revtmd:modelName/>
+          <revtmd:serialNumber/>
+          <revtmd:signal/>
+          <revtmd:settings/>
+        </revtmd:codingProcessHistory>
+        <revtmd:codingProcessHistory>
+          <revtmd:role/>
+          <revtmd:description/>
+          <revtmd:manufacturer/>
+          <revtmd:modelName/>
+          <revtmd:serialNumber/>
+          <revtmd:signal/>
+          <revtmd:settings/>
+        </revtmd:codingProcessHistory>
+        <revtmd:codingProcessHistory>
+          <revtmd:role/>
+          <revtmd:description/>
+          <revtmd:manufacturer/>
+          <revtmd:modelName/>
+          <revtmd:serialNumber/>
+          <revtmd:signal/>
+          <revtmd:settings/>
+        </revtmd:codingProcessHistory>
+      </revtmd:captureHistory>
+    </revtmd:object>
+  </revtmd:reVTMD>
 </revtmd>
