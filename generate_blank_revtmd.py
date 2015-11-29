@@ -89,10 +89,12 @@ with open(inmagicxml, "w+") as fo:
     fo.write('</revtmd>\n')
     
     
-# bad code - find better way to append rather than bouncing back and forth between temp files
-with open(updated, "w+") as fo:
-    thangy = subprocess.check_output(['xml', 'ed', '-N', 'x=http://nwtssite.nwts.nara/schema/', '-u', '//revtmd:filename', '-v', result[1], inmagicxml])
-    fo.write(str(thangy))
-with open(inmagicxml, "w+") as fo:
-    thangy = subprocess.check_output(['xml', 'ed', '-N', 'x=http://nwtssite.nwts.nara/schema/', '-u', '//revtmd:identifier', '-v', result[0], updated])
-    fo.write(str(thangy))
+
+subprocess.call(['xml', 'ed', '--inplace', '-N', 'x=http://nwtssite.nwts.nara/schema/', '-u', '//revtmd:filename', '-v', result[1], inmagicxml])
+
+
+subprocess.call(['xml', 'ed','--inplace', '-N', 'x=http://nwtssite.nwts.nara/schema/', '-u', '//revtmd:identifier', '-v', result[0], inmagicxml])
+
+
+subprocess.call(['xml', 'ed','--inplace', '-N', 'x=http://nwtssite.nwts.nara/schema/', '-u', '//revtmd:digitizationEngineer[1]', '-v', "Kieran O'Leary", inmagicxml])
+
