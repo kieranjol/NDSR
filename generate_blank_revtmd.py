@@ -3,9 +3,35 @@ import subprocess
 
 
 
-import easygui
-result = easygui.multenterbox("Enter your name", "Name query", ["123456","User",])
-print result[1]
+from easygui import multenterbox, choicebox
+
+msg ="Which Workflow?"
+title = "Workflows"
+choices = ["Telecine One Light", "Telecine Bestlight", "Telecine Grade", "Tape Ingest 1", "Tape Ingest 2", "Tape Edit Suite 1", "Tape Ingest 2"]
+choice = choicebox(msg, title, choices)
+
+msg ="User?"
+title = "Pick a name yo!"
+choices = ["Kieran O'Leary", "Gavin Martin", "Dean Kavanagh", "Raelene Casey", "Anja Mahler", "Eoin O'Donohoe"]
+user = choicebox(msg, title, choices)
+    
+msg = "Enter your personal information"
+title = "Credit Card Application"
+fieldNames = ["Source Accession Number","Notes","Filmographic Reference Number"]
+fieldValues = []  # we start with blanks for the values
+fieldValues = multenterbox(msg,title, fieldNames)
+ 
+    # make sure that none of the fields was left blank
+while 1:
+        if fieldValues == None: break
+        errmsg = ""
+        for i in range(len(fieldNames)):
+            if fieldValues[i].strip() == "":
+                errmsg = errmsg + ('"%s" is a required field.' % fieldNames[i])
+        if errmsg == "": break # no problems found
+        fieldValues = multenterbox(errmsg, title, fieldNames, fieldValues)
+ 
+print "Reply was:", fieldValues
     
 inmagicxml = sys.argv[1] + '.xml'
 updated = inmagicxml + 'updated.xml'
@@ -92,6 +118,6 @@ with open(inmagicxml, "w+") as fo:
 def add_to_revtmd(element, value, xmlfile):
     subprocess.call(['xml', 'ed', '--inplace', '-N', 'x=http://nwtssite.nwts.nara/schema/', '-u', element, '-v', value, xmlfile])
     
-add_to_revtmd('//revtmd:filename', result[1], inmagicxml)
-add_to_revtmd('//revtmd:identifier', result[0], inmagicxml)
+add_to_revtmd('//revtmd:filename', fieldValues[1], inmagicxml)
+add_to_revtmd('//revtmd:identifier', fieldValues[0], inmagicxml)
 add_to_revtmd('//revtmd:digitizationEngineer[1]', "Kieran O'Leary", inmagicxml)
