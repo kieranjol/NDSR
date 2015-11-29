@@ -123,8 +123,14 @@ def bestlight():
         
     add_to_revtmd('//revtmd:filename', fieldValues[1], inmagicxml)
     add_to_revtmd('//revtmd:identifier', fieldValues[0], inmagicxml)
+    add_to_revtmd('//revtmd:codingProcessHistory[1]/revtmd:role', 'Playback', inmagicxml)
+    add_to_revtmd('//revtmd:codingProcessHistory[1]/revtmd:description', '16mm Film Digitisation', inmagicxml)
+    add_to_revtmd('//revtmd:codingProcessHistory[1]/revtmd:manufacturer', 'MWA', inmagicxml)
+    add_to_revtmd('//revtmd:codingProcessHistory[1]/revtmd:modelName', 'Flashtransfer', inmagicxml)
+    add_to_revtmd('//revtmd:codingProcessHistory[1]/revtmd:signal', 'SDI', inmagicxml)
+    add_to_revtmd('//revtmd:codingProcessHistory[1]/revtmd:serialNumber', 'ABC123', inmagicxml)
     add_to_revtmd('//revtmd:digitizationEngineer[1]', user, inmagicxml)
-
+   
 if choice == "bestlight":
     bestlight()
 
