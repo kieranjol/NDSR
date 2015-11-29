@@ -4,7 +4,7 @@ import subprocess
 
 
 import easygui
-result = easygui.multenterbox("Enter your name", "Name query", ["Filename","whateva"])
+result = easygui.multenterbox("Enter your name", "Name query", ["123456","User",])
 print result[1]
     
 inmagicxml = sys.argv[1] + '.xml'
@@ -89,12 +89,9 @@ with open(inmagicxml, "w+") as fo:
     fo.write('</revtmd>\n')
     
     
-
-subprocess.call(['xml', 'ed', '--inplace', '-N', 'x=http://nwtssite.nwts.nara/schema/', '-u', '//revtmd:filename', '-v', result[1], inmagicxml])
-
-
-subprocess.call(['xml', 'ed','--inplace', '-N', 'x=http://nwtssite.nwts.nara/schema/', '-u', '//revtmd:identifier', '-v', result[0], inmagicxml])
-
-
-subprocess.call(['xml', 'ed','--inplace', '-N', 'x=http://nwtssite.nwts.nara/schema/', '-u', '//revtmd:digitizationEngineer[1]', '-v', "Kieran O'Leary", inmagicxml])
-
+def add_to_revtmd(element, value, xmlfile):
+    subprocess.call(['xml', 'ed', '--inplace', '-N', 'x=http://nwtssite.nwts.nara/schema/', '-u', element, '-v', value, xmlfile])
+    
+add_to_revtmd('//revtmd:filename', result[1], inmagicxml)
+add_to_revtmd('//revtmd:identifier', result[0], inmagicxml)
+add_to_revtmd('//revtmd:digitizationEngineer[1]', "Kieran O'Leary", inmagicxml)
